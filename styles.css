@@ -1,0 +1,66 @@
+/* General Header and Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Links on left, icons on right */
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: top;
+    height: 50px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* Sticky Navbar on Scroll */
+.sticky {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left-side Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 15px 10px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Right-side Icons (e.g., GitHub) */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+/* Main Content Area */
+.profile-pic {
+    top: 100px;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}

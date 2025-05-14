@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Eric's Website</title>
-    <p>
-        <h1>Welcome to Eric's Website</h1>
-        <p>This is a simple HTML page created for demonstration purposes.</p>
-        <p>Feel free to explore and learn more about web development!</p>
-        <p>Contact:
-    </p>
-</head>
-</body>
-</html>
+    <head>
+        <title>Eric M. Rohloff - Computer Engineer</title>
 
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="https://github.com/ericrohloff" target="_blank">
+                        <img
+                            src="images/github.svg"
+                            alt="GitHub Logo"
+                            class="logo"
+                        />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/ericrohloff/"
+                        target="_blank"
+                    >
+                        <img
+                            src="images/linkedin.svg"
+                            alt="LinkedIn Logo"
+                            class="logo"
+                        />
+                    </a>
+                    <a href="mailto:ericr687@gmail.com">
+                        <img
+                            src="images/email.svg"
+                            alt="Email Logo"
+                            class="logo"
+                        />
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <script>
+            window.addEventListener("scroll", function () {
+                var navbar = document.querySelector(".navbar");
+                navbar.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
+
+        <section id="about">
+            <!-- <img
+                src="images/headshot.png"
+                alt="profile-pic"
+                class="profile-pic"
+            /> -->
+            <p>
+                Hi, I'm Eric Rohloff — a Computer Engineering student at Tufts
+                University, graduating in May 2026 with minors in Computer
+                Science and Engineering Management. I'm passionate about solving
+                real-world problems at the intersection of embedded systems,
+                software engineering, and computer architecture. Over the past
+                few years, I've worked on projects ranging from building an ARM
+                LEGv8 processor in VHDL to creating web-based data tools using
+                BLE, MQTT, and Python. My research at Tufts has focused on
+                extending the capabilities of the LEGO SPIKE Prime through
+                custom hardware and software integrations with ESP32
+                microcontrollers. I've also served as a Residential Assistant,
+                worked with organizations like IEEE and JumboCode, and developed
+                embedded and full-stack applications to support both learning
+                and community initiatives. I enjoy building things from the
+                ground up—whether it's a PCB, a Python web server, or a digital
+                game on an FPGA. Feel free to explore my projects or reach out
+                if you'd like to collaborate!
+            </p>
+        </section>
+    </body>
+</html>
