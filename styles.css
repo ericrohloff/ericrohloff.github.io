@@ -1,15 +1,26 @@
+body {
+    margin: 0;
+    padding-top: 50px; /* Match the navbar height */
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
 /* General Header and Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Links on left, icons on right */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 0px;
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
-    position: top;
     height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    transition: all 0.3s ease;
 }
 
 /* Sticky Navbar on Scroll */
@@ -48,11 +59,13 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    padding-right: 20;
 }
 
 .logo {
     width: 30px;
     height: 30px;
+    padding-right: 20px;
 }
 
 /* Main Content Area */
@@ -63,4 +76,19 @@
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #ccc;
+}
+
+/* Resume Section */
+.resume {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.resume-screenshot {
+    width: 35%;
+    height: auto;
+    margin: 20px auto;
+    display: block; /* ✅ ensures margin auto works */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
