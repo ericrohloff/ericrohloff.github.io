@@ -1,94 +1,151 @@
-body {
-    margin: 0;
-    padding-top: 50px; /* Match the navbar height */
-    font-family: sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    overflow-x: hidden;
-}
-
-/* General Header and Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-/* Sticky Navbar on Scroll */
-.sticky {
-    position: fixed;
-    top: 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Left-side Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+/* Card-style bio */
+* {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    align-items: top;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    padding: 200px 300px;
 }
 
-.nav-links li a {
-    text-decoration: none;
+.hello {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.card {
+    width: 350px;
+    height: 515px;
+    margin: 0px auto 0;
+    perspective: 1000px;
+}
+
+.card-inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: url(images/headshot.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #ffffff;
+}
+
+.front p {
+    color: #000000;
+    font-size: 13px;
+}
+
+.front button {
+    width: 120px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.back {
+    background: #ffffff;
     color: #333;
-    font-weight: 500;
-    font-family: sans-serif;
-    padding: 15px 10px;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s, border-bottom 0.3s;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
 }
 
-.nav-links li a:hover {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+.back h1 {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 55px;
+    margin-bottom: 10px;
 }
 
-/* Right-side Icons (e.g., GitHub) */
-.nav-icons {
+.back h1 span {
+    font-weight: 400;
+    border-bottom: 2px solid #7800ad;
+}
+
+.back h2 {
+    margin-top: 2px;
+    font-weight: 200;
+}
+
+.back h3 {
+    font-size: 30px;
+    font-weight: 50;
+}
+
+.back p {
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.back button {
+    background: #7800ad;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 4px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
+    cursor: pointer;
+}
+
+.back a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
-    gap: 30px;
-    padding-right: 20;
+    justify-content: center;
+    margin: 0 5px;
 }
 
-.logo {
-    width: 30px;
-    height: 30px;
-    padding-right: 20px;
+.back a img {
+    width: 50%;
 }
 
-/* Main Content Area */
-.profile-pic {
-    top: 100px;
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-}
-
-/* Resume Section */
-.resume {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.resume-screenshot {
-    width: 35%;
-    height: auto;
-    margin: 20px auto;
-    display: block; /* ✅ ensures margin auto works */
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.card:hover .card-inner {
+    transform: rotateY(180deg);
 }

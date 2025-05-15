@@ -1,75 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eric M. Rohloff - Computer Engineer</title>
-
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-                <div class="title">
-                    <b>Eric M. Rohloff</b>
-                </div>
-                <div class="nav-icons">
-                    <a href="https://github.com/ericrohloff" target="_blank">
-                        <img
-                            src="images/github.svg"
-                            alt="GitHub Logo"
-                            class="logo"
-                        />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/ericrohloff/"
-                        target="_blank"
-                    >
-                        <img
-                            src="images/linkedin.svg"
-                            alt="LinkedIn Logo"
-                            class="logo"
-                        />
-                    </a>
-                    <a href="mailto:ericr687@gmail.com">
-                        <img
-                            src="images/email.svg"
-                            alt="Email Logo"
-                            class="logo"
-                        />
-                    </a>
-                </div>
-            </nav>
+            <div class="navbar"></div>
         </header>
-
-        <section id="about">
-            <!-- <img
-                src="images/headshot.png"
-                alt="profile-pic"
-                class="profile-pic"
-            /> -->
-            <p>
-                Hi, I'm Eric Rohloff — a Computer Engineering student at Tufts
-                University, graduating in May 2026 with minors in Computer
-                Science and Engineering Management. I'm passionate about solving
-                real-world problems at the intersection of embedded systems,
-                software engineering, and computer architecture. Over the past
-                few years, I've worked on projects ranging from building an ARM
-                LEGv8 processor in VHDL to creating web-based data tools using
-                BLE, MQTT, and Python. My research at Tufts has focused on
-                extending the capabilities of the LEGO SPIKE Prime through
-                custom hardware and software integrations with ESP32
-                microcontrollers. I've also served as a Residential Assistant,
-                worked with organizations like IEEE and JumboCode, and developed
-                embedded and full-stack applications to support both learning
-                and community initiatives. I enjoy building things from the
-                ground up—whether it's a PCB, a Python web server, or a digital
-                game on an FPGA. Feel free to explore my projects or reach out
-                if you'd like to collaborate!
-            </p>
+        <section>
+            <div class="container">
+                <div class="hello">
+                    <h1>Hi, I'm Eric!</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="front">
+                            <button>Learn More</button>
+                        </div>
+                        <div class="back">
+                            <h1>Eric Rohloff</h1>
+                            <h3>Tufts University</h3>
+                            <h2>B.S. Computer Engineering '26</h2>
+                            <p>
+                                I'm a Computer Engineering student at Tufts
+                                University with interests in computer
+                                architecture, embedded systems, and software
+                                engineering.
+                            </p>
+                            <p>
+                                I'm passionate about developing cutting-edge
+                                technology and am actively seeking new grad
+                                roles for Summer 2026.
+                            </p>
+                            <p>Check out some of my projects!</p>
+                            <div class="row">
+                                <button
+                                    onclick="window.location.href='mailto:your.email@example.com'"
+                                >
+                                    Email
+                                </button>
+                                <a
+                                    href="https://github.com/ericrohloff"
+                                    target="_blank"
+                                    ><img src="images/github.svg"
+                                /></a>
+                                <a
+                                    href="https://www.linkedin.com/in/ericrohloff/"
+                                    target="_blank"
+                                    ><img src="images/linkedin.svg"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
 </html>
