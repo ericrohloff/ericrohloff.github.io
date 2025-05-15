@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-align: start;
 }
 
 .container {
@@ -204,26 +205,34 @@ header p {
     cursor: pointer;
 }
 
-.back a {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 5px;
-}
-
-.back a img {
-    width: 50%;
-}
-
 .card:hover .card-inner {
     transform: rotateY(180deg);
 }
 
+.back button a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
 /* Projects Section */
+
+#Projects {
+    scroll-margin-top: 60px;
+}
+
+.project_container {
+    width: 100%;
+    height: auto;
+    align-items: top;
+    display: flex;
+    flex-direction: row;
+    scroll-margin-top: 60px;
+    justify-content: center;
+    padding: 150px 10px 100px 10px;
+    gap: 100px;
+}
 
 .title {
     font-family: "Poetsen One", sans-serif;
@@ -233,17 +242,6 @@ header p {
     color: #fff;
     text-align: center;
     margin-top: 200px;
-}
-
-.project_container {
-    width: 100%;
-    height: auto;
-    align-items: top;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 100px 10px;
-    gap: 100px;
 }
 
 .project_title {
@@ -350,4 +348,74 @@ header p {
 
 .project_card:hover .project_card_inner {
     transform: rotateY(180deg);
+}
+
+/* Experience Section */
+#Experience {
+    scroll-margin-top: 60px;
+}
+
+.experience_container {
+    width: 100%;
+    height: auto;
+    align-items: top;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 10px;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    padding: 50px 0;
+}
+
+.timeline_container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.timeline_container img {
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right img {
+    left: -20px;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
 }
