@@ -49,54 +49,110 @@
                 </li>
             </ul>
         </header>
-        <section id="About">
-            <div class="container">
-                <div class="hello">
-                    <h1>Hi, I'm Eric!</h1>
-                </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="front">
-                            <button>Learn More</button>
-                        </div>
-                        <div class="back">
-                            <h1>Eric Rohloff</h1>
-                            <h3>Tufts University</h3>
-                            <h2>B.S. Computer Engineering '26</h2>
-                            <p>
-                                I'm a Computer Engineering student at Tufts
-                                University with interests in computer
-                                architecture, embedded systems, and software
-                                engineering.
-                            </p>
-                            <p>
-                                I'm passionate about developing cutting-edge
-                                technology and am actively seeking new grad
-                                roles for Summer 2026.
-                            </p>
-                            <p>Check out some of my projects!</p>
-                            <div class="row">
-                                <button
-                                    onclick="window.location.href='mailto:your.email@example.com'"
-                                >
-                                    Email
-                                </button>
-                                <a
-                                    href="https://github.com/ericrohloff"
-                                    target="_blank"
-                                    ><img src="images/github.svg"
-                                /></a>
-                                <a
-                                    href="https://www.linkedin.com/in/ericrohloff/"
-                                    target="_blank"
-                                    ><img src="images/linkedin.svg"
-                                /></a>
+        <div class="container">
+            <section id="About">
+                <div class="about_container">
+                    <div class="hello">
+                        <h1>Hi, I'm Eric!</h1>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="front">
+                                <button>Learn More</button>
+                            </div>
+                            <div class="back">
+                                <h1>Eric Rohloff</h1>
+                                <h3>Tufts University</h3>
+                                <h2>B.S. Computer Engineering '26</h2>
+                                <p>
+                                    I'm a Computer Engineering student at Tufts
+                                    University with interests in computer
+                                    architecture, embedded systems, and software
+                                    engineering.
+                                </p>
+                                <p>
+                                    I'm passionate about developing cutting-edge
+                                    technology and am actively seeking new grad
+                                    roles for Summer 2026.
+                                </p>
+                                <p>Check out some of my projects!</p>
+                                <div class="row">
+                                    <button
+                                        onclick="window.location.href='mailto:your.email@example.com'"
+                                    >
+                                        Email
+                                    </button>
+                                    <a
+                                        href="https://github.com/ericrohloff"
+                                        target="_blank"
+                                        ><img src="images/github.svg"
+                                    /></a>
+                                    <a
+                                        href="https://www.linkedin.com/in/ericrohloff/"
+                                        target="_blank"
+                                        ><img src="images/linkedin.svg"
+                                    /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="Projects"></section>
+            </section>
+            <section id="Projects">
+                <div class="title">Projects</div>
+                <div class="project_container">
+                    <div class="project_card">
+                        <div class="project_card_inner">
+                            <div class="project_card_front" id="project1"></div>
+                            <div class="project_card_back">
+                                <p>
+                                    A PCB for the LEGO SPIKE Prime that connects
+                                    to one of the ports on the device. This
+                                    allows for UART communication between the
+                                    SPIKE and a Seeed Studio Xiao ESP32-C3.
+                                </p>
+                                <button>
+                                    <a
+                                        href="https://github.com/ericrohloff/LEGO-SPIKE-Prime-PCB"
+                                        >View on GitHub</a
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <p class="project_title">LEGO SPIKE Prime PCB</p>
+                    </div>
+                    <div class="project_card">
+                        <div class="project_card_inner">
+                            <div class="project_card_front" id="project2"></div>
+                            <div class="project_card_back">
+                                <p>
+                                    Description of Project 2. This project
+                                    involves...
+                                </p>
+                                <button>
+                                    <a href="">View on GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="project_title">P2</p>
+                    </div>
+                    <div class="project_card">
+                        <div class="project_card_inner">
+                            <div class="project_card_front" id="project3"></div>
+                            <div class="project_card_back">
+                                <p>
+                                    Description of Project 3. This project
+                                    involves...
+                                </p>
+                                <button>
+                                    <a href="">View on GitHub</a>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="project_title">P3</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </body>
 </html>
