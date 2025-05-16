@@ -88,7 +88,8 @@ header p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 200px 300px;
+    padding: 200px 250px;
+    gap: 400px;
 }
 
 .hello {
@@ -292,9 +293,9 @@ header p {
 }
 
 #project2 {
-    background: white;
-    background-size: cover;
+    background: url(images/c43.png);
     background-position: center;
+    background-size: cover;
 }
 
 #project3 {
@@ -320,6 +321,7 @@ header p {
 .project_card_back p {
     margin-top: 15px;
     font-size: 25px;
+    font-weight: 200;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
@@ -381,9 +383,43 @@ header p {
 .text-box {
     padding: 20px 30px;
     background: #fff;
+    color: #333;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    border-bottom: #333 1px solid;
+}
+
+.text-box p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.text-box small {
+    font-weight: 550;
+}
+
+.job_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#date {
+    margin-right: 0;
 }
 
 .left {
@@ -397,16 +433,16 @@ header p {
 .timeline_container img {
     position: absolute;
     background-color: white;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    right: -20px;
+    right: -30px;
     top: 32px;
     z-index: 10;
 }
 
 .right img {
-    left: -20px;
+    left: -30px;
 }
 
 .timeline::after {
@@ -419,4 +455,16 @@ header p {
     left: 50%;
     margin-left: -3px;
     z-index: 1;
+}
+
+#fedex {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* Skills Section */
+
+#Skills {
+    scroll-margin-top: 60px;
 }
